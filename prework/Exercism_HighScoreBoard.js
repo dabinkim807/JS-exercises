@@ -118,11 +118,11 @@ Your function normalizeScore should return the normalized score that you get aft
 passed in. */
 
 // should return result of calling normalize function from input object (value of normalizeFunction key) on score value (value of score key)
-function normalizeScore(obj) { // obj = { score: 400, normalizeFunction: normalize }
+function normalizeScore(obj) { 
   return obj["normalizeFunction"](obj["score"]);
 }
 
-function normalize(score) { // score = 400
+function normalize(score) { 
   return 2 * score + 10;
 }
 
